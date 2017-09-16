@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.pc_38.evaluacionuno.DatosEstudiantes"
+    android:layout_margin="20dp"
+    >
+
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Nombre"
+    android:id="@+id/txtNombre"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Codigo"
+        android:id="@+id/txtCodigo"
+        android:layout_below="@+id/txtNombre"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Materia"
+        android:id="@+id/txtMateria"
+        android:layout_below="@+id/txtCodigo"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="11dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Primer Parcial    : 30%"
+        android:id="@+id/txtParcialUno"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/txtMateria"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Segundo Parcial    : 30%"
+        android:id="@+id/txtParcialDos"
+        android:layout_below="@+id/txtParcialFinal"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tercer Parcial    : 40%"
+        android:id="@+id/txtParcialFinal"
+        android:layout_below="@+id/txtParcialUno"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/btnGuardar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtParcialDos"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp"
+        android:text="Guardar" />
+
+
+
+</RelativeLayout>
